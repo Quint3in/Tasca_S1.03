@@ -14,6 +14,14 @@ que no es permeten duplicats.
 Finalment, recorre la col·lecció amb un bucle for i amb un 
 Iterator.
 
+## Nivell 2 Exercici 1
+**Descripció**:
+Crea i emplena una List<Integer>.
+Crea una segona llista i insereix-hi els mateixos elements 
+però en ordre invers.
+Utilitza un ListIterator per llegir els elements de la 
+primera i afegir-los a la segona
+
 ## 🛠 Tecnologies
 - Backend: Java
 
