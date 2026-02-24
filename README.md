@@ -14,7 +14,7 @@ que no es permeten duplicats.
 Finalment, recorre la col·lecció amb un bucle for i amb un 
 Iterator.
 
-## Nivell 2 Exercici 1
+## Nivell 1 Exercici 2
 **Descripció**:
 Crea i emplena una List<Integer>.
 Crea una segona llista i insereix-hi els mateixos elements 
