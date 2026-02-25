@@ -43,6 +43,14 @@ implementa la funcionalitat necessària perquè els objectes
 es puguin ordenar alfabèticament pel nom i, en cas que
 coincideixin, per puntuació en ordre descendent.
 
+## Nivell 3 Exercici1
+**Descripció**:
+Crea una aplicació capaç de llegir un fitxer CSV. Aquest
+fitxer té 3 camps: nom, cognom i DNI, per cada registre.
+Es tracta d’ordenar les persones llegides del fitxer,
+mitjançant el seu nom, cognom o DNI. Pots fer servir la
+llista que creguis més adient.
+
 ## 🛠 Tecnologies
 - Backend: Java
 
