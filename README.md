@@ -36,6 +36,13 @@ necessaris (equals() i hashCode()) perquè no es puguin
 introduir objectes Restaurant amb el mateix nom i la
 mateixa puntuació dins un HashSet.
 
+## Nivell 2 Exercici 2
+**Descripció**:
+A partir de la classe Restaurant del programa anterior,
+implementa la funcionalitat necessària perquè els objectes
+es puguin ordenar alfabèticament pel nom i, en cas que
+coincideixin, per puntuació en ordre descendent.
+
 ## 🛠 Tecnologies
 - Backend: Java
 
