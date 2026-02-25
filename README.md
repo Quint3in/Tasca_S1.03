@@ -28,6 +28,14 @@ En aquest exercici posarem en pràctica la lectura de
 fitxers, l’ús de col·leccions com HashMap i la interacció
 amb l’usuari mitjançant un petit joc de preguntes.
 
+## Nivell 2 Exercici 1
+**Descripció**:
+Crea una classe anomenada Restaurant amb dos atributs: nom
+(String) i puntuació (int). Implementa els mètodes
+necessaris (equals() i hashCode()) perquè no es puguin
+introduir objectes Restaurant amb el mateix nom i la
+mateixa puntuació dins un HashSet.
+
 ## 🛠 Tecnologies
 - Backend: Java
 
