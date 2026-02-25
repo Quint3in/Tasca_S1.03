@@ -22,6 +22,12 @@ però en ordre invers.
 Utilitza un ListIterator per llegir els elements de la 
 primera i afegir-los a la segona
 
+## Nivell 1 Exercici 3
+**Descripció**:
+En aquest exercici posarem en pràctica la lectura de 
+fitxers, l’ús de col·leccions com HashMap i la interacció
+amb l’usuari mitjançant un petit joc de preguntes.
+
 ## 🛠 Tecnologies
 - Backend: Java
 
