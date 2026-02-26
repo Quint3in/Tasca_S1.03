@@ -1,13 +1,14 @@
 package org.example.utils;
 
-import org.example.Person;
+import org.example.model.Person;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashSet;
-import static org.example.utils.ValidationUtils.*;
+
+import static org.example.utils.ValidationUtils.isValidDni;
 
 
 public class FileManager {

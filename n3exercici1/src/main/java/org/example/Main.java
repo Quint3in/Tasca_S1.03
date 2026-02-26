@@ -1,18 +1,24 @@
 package org.example;
 
+import org.example.menu.ConsoleMenu;
+import org.example.model.Person;
+import org.example.repository.PersonRepository;
+import org.example.service.PersonService;
+import org.example.utils.FileManager;
+
 import java.nio.file.Path;
 import java.util.HashSet;
 
-import static org.example.utils.FileManager.loadPersonCSVtoHashSet;
-
 public class Main {
-    static void main() {
-        final String MODULE = "N3Exercici1/";
-        final String INPUT_FILE = MODULE + "persones.csv";
+    public static void main(String[] args) {
+        final String MODULE = "n3exercici1";
+        final Path inputFile = Path.of(MODULE, "persones.csv");
 
-        HashSet<Person> people = loadPersonCSVtoHashSet(Path.of(INPUT_FILE));
+        HashSet<Person> people = FileManager.loadPersonCSVtoHashSet(inputFile);
 
-        ConsoleUI ui = new ConsoleUI(people);
-        ui.start();
+        PersonRepository repository = new PersonRepository(people);
+        PersonService service = new PersonService(repository);
+        ConsoleMenu menu = new ConsoleMenu(service);
+        menu.start();
     }
 }
