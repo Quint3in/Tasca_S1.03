@@ -33,7 +33,8 @@ public class MapFileLoader {
         boolean exists = Files.exists(p);
         try (BufferedWriter bw = Files.newBufferedWriter(
                 p,
-                StandardOpenOption.APPEND
+                StandardOpenOption.APPEND,
+                StandardOpenOption.CREATE
         )) {
             if (!exists) {bw.write("# Nom:Puntuació");}
             bw.newLine();

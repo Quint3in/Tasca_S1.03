@@ -19,11 +19,11 @@ public class Main {
 
         List<Map.Entry<String,String>> random10 = pickRandomEntries(countries,10);
 
-        int puntuacio = 0;
+        int score = 0;
         for (Map.Entry<String,String> entry : random10) {
             String answer = readNonEmptyString("Capital de " + entry.getKey().replace("_"," ") + ": ");
             if (answer.equals(entry.getValue().replace("_"," "))) {
-                puntuacio++;
+                score++;
                 System.out.println("Correcte!");
             } else {
                 System.out.println("Incorrecte!");
@@ -31,7 +31,7 @@ public class Main {
             pressEnterToContinue();
         }
 
-        writeLeaderboard(Path.of(FILE_OUTPUT),name,puntuacio);
+        writeLeaderboard(Path.of(FILE_OUTPUT),name,score);
         System.out.println("Afegit a la classificació -> " + FILE_OUTPUT);
 
     }
