@@ -1,8 +1,13 @@
 package org.example;
 
+import java.util.Comparator;
 import java.util.Objects;
 
 public class Restaurant {
+    public static final Comparator<Restaurant> BY_NAME_THEN_SCORE =
+            Comparator.comparing(Restaurant::getName)
+                    .thenComparingInt(Restaurant::getScore);
+
     private String name;
     private int score;
 
@@ -33,7 +38,7 @@ public class Restaurant {
 
     @Override
     public String toString() {
-        return "Restaurant{ " +
+        return "Restaurant{" +
                 "nom: " + name +
                 ", puntuació: " + score +
                 '}';

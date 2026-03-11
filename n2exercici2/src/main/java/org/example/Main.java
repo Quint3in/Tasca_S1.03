@@ -1,6 +1,5 @@
 package org.example;
 
-import java.util.Comparator;
 import java.util.HashSet;
 
 public class Main {
@@ -14,10 +13,6 @@ public class Main {
         restaurants.add(new Restaurant("A",10));
         restaurants.forEach(System.out::println);
 
-        Comparator<Restaurant> byNameThenScore =
-                Comparator.comparing(Restaurant::getName)
-                        .thenComparingInt(Restaurant::getScore);
-
-        restaurants.stream().sorted(byNameThenScore).forEach(System.out::println);
+        restaurants.stream().sorted(Restaurant.BY_NAME_THEN_SCORE).forEach(System.out::println);
     }
 }
