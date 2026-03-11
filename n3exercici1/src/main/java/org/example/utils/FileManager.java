@@ -27,7 +27,7 @@ public class FileManager {
                 people.add(new Person(parts[0].trim(), parts[1].trim(), parts[2].trim()));
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Error en la càrrega de CSV: " + e.getMessage());
         }
         return people;
     }
