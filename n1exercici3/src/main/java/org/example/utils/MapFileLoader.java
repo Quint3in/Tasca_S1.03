@@ -41,7 +41,7 @@ public class MapFileLoader {
             bw.write(name + ":" + score);
             return true;
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException("Error en la escriptura de classificació: "+e.getMessage());
         }
     }
 }
