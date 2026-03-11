@@ -5,20 +5,18 @@ import java.util.*;
 
 public class Main {
     static void main() {
-        List<Month> months = new ArrayList<>(
-                List.of(
-                        new Month("January"),
-                        new Month("February"),
-                        new Month("March"),
-                        new Month("April"),
-                        new Month("May"),
-                        new Month("June"),
-                        new Month("July"),
-                        new Month("September"),
-                        new Month("October"),
-                        new Month("November"),
-                        new Month("December")
-                )
+        List<Month> months = List.of(
+            new Month("January"),
+            new Month("February"),
+            new Month("March"),
+            new Month("April"),
+            new Month("May"),
+            new Month("June"),
+            new Month("July"),
+            new Month("September"),
+            new Month("October"),
+            new Month("November"),
+            new Month("December")
         );
 
         Month august = new Month("August");
