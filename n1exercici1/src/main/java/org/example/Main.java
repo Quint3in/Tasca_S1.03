@@ -4,7 +4,8 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        List<Month> months = List.of(
+        List<Month> months = new ArrayList<>(
+                List.of(
             new Month("January"),
             new Month("February"),
             new Month("March"),
@@ -16,6 +17,7 @@ public class Main {
             new Month("October"),
             new Month("November"),
             new Month("December")
+                )
         );
 
         Month august = new Month("August");
