@@ -1,10 +1,9 @@
 package org.example;
 
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
         List<Month> months = List.of(
             new Month("January"),
             new Month("February"),

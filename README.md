@@ -1,59 +1,51 @@
-# Tasca S1.03
+# Task S1.03
 
-## Nivell 1 Exercici 1
-**Descripció**:
-Crea una classe anomenada Month amb un atribut name, que 
-emmagatzemi el nom del mes. Afegeix 11 objectes Month a 
-un ArrayList, deixant fora "Agost". Insereix aquest mes a 
-la posició corresponent i comprova que l’ordre dels mesos 
-és correcte.
+## Level 1 Exercise 1
+**Description**:
+Create a class named Month with an attribute `name` that stores the name of the month.
+Add 11 Month objects to an ArrayList, leaving out "August". Insert this month in the
+corresponding position and verify that the order of the months is correct.
 
-Converteix després l’ArrayList en un HashSet i verifica 
-que no es permeten duplicats.
+Then convert the ArrayList into a HashSet and verify that duplicates are not allowed.
 
-Finalment, recorre la col·lecció amb un bucle for i amb un 
-Iterator.
+Finally, iterate over the collection with a for loop and with an Iterator.
 
-## Nivell 1 Exercici 2
-**Descripció**:
-Crea i emplena una List<Integer>.
-Crea una segona llista i insereix-hi els mateixos elements 
-però en ordre invers.
-Utilitza un ListIterator per llegir els elements de la 
-primera i afegir-los a la segona
+## Level 1 Exercise 2
+**Description**:
+Create and fill a List<Integer>.
+Create a second list and insert the same elements but in reverse order.
+Use a ListIterator to read the elements of the first list and add them to the second.
 
-## Nivell 1 Exercici 3
-**Descripció**:
-En aquest exercici posarem en pràctica la lectura de 
-fitxers, l’ús de col·leccions com HashMap i la interacció
-amb l’usuari mitjançant un petit joc de preguntes.
+## Level 1 Exercise 3
+**Description**:
+In this exercise we will practice reading files, using collections such as HashMap,
+and interacting with the user through a small quiz game.
 
-## Nivell 2 Exercici 1
-**Descripció**:
-Crea una classe anomenada Restaurant amb dos atributs: nom
-(String) i puntuació (int). Implementa els mètodes
-necessaris (equals() i hashCode()) perquè no es puguin
-introduir objectes Restaurant amb el mateix nom i la
-mateixa puntuació dins un HashSet.
+## Level 2 Exercise 1
+**Description**:
+Create a class named Restaurant with two attributes: name (String) and rating (int).
+Implement the necessary methods (equals() and hashCode()) so that Restaurant objects
+with the same name and the same rating cannot be added to a HashSet.
 
-## Nivell 2 Exercici 2
-**Descripció**:
-A partir de la classe Restaurant del programa anterior,
-implementa la funcionalitat necessària perquè els objectes
-es puguin ordenar alfabèticament pel nom i, en cas que
-coincideixin, per puntuació en ordre descendent.
+## Level 2 Exercise 2
+**Description**:
+Based on the Restaurant class from the previous program, implement the functionality
+so that the objects can be ordered alphabetically by name and, if they match,
+by rating in descending order.
 
-## Nivell 3 Exercici1
-**Descripció**:
-Crea una aplicació capaç de llegir un fitxer CSV. Aquest
-fitxer té 3 camps: nom, cognom i DNI, per cada registre.
-Es tracta d’ordenar les persones llegides del fitxer,
-mitjançant el seu nom, cognom o DNI. Pots fer servir la
-llista que creguis més adient.
+## Level 3 Exercise 1
+**Description**:
+Create an application capable of reading a CSV file. This file has 3 fields: first name,
+last name and DNI, for each record. The task is to sort the people read from the file
+by their first name, last name or DNI. You may use the list you consider most appropriate.
 
-## 🛠 Tecnologies
+## Technologies
 - Backend: Java
 
-## 🚀 Instal·lació i Execució
-1. Clonar el repositori: `git clone https://github.com/Quint3in/Tasca_S1.03.git`
-2. Execució de l'aplicació.
+## Installation and Execution
+1. Clone the repository: `git clone https://github.com/Quint3in/Tasca_S1.03.git`
+2. Go into the project folder: `cd Tasca_S1.03`
+3. Build the module you want (from the root). Example for `n2exercici1`:
+   `mvn -pl n2exercici1 -am package`
+4. Run it (from the root):
+   `java -cp n2exercici1/target/classes org.example.Main`

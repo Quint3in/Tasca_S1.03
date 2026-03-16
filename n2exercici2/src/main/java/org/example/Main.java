@@ -3,7 +3,7 @@ package org.example;
 import java.util.HashSet;
 
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
         HashSet<Restaurant> restaurants = new HashSet<>();
 
         restaurants.add(new Restaurant("B",10));

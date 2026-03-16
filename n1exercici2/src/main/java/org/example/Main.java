@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.ListIterator;
 
 public class Main {
-    static void main() {
+    public static void main(String[] args) {
         List<Integer> numbers = List.of(5,10,40);
         List<Integer> reversedNumbers = new ArrayList<>();
 

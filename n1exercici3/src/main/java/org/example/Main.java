@@ -11,7 +11,7 @@ public class Main {
     private static final Path INPUT = Path.of("N1Exercici3/countries.txt");
     private static final Path OUTPUT = Path.of("N1Exercici3/clasificacio.txt");
 
-    static void main() {
+    public static void main(String[] args) {
         Map<String, String> countries = MapFileLoader.loadCountries(INPUT);
 
         String name = ConsoleInput.readNonEmptyString("Escriu el teu nom: ");
