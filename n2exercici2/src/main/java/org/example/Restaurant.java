@@ -4,9 +4,9 @@ import java.util.Comparator;
 import java.util.Objects;
 
 public class Restaurant {
-    public static final Comparator<Restaurant> BY_NAME_THEN_SCORE =
+    public static final Comparator<Restaurant> BY_NAME_ASC_THEN_SCORE_DESC =
             Comparator.comparing(Restaurant::getName)
-                    .thenComparingInt(Restaurant::getScore);
+                    .thenComparing(Comparator.comparingInt(Restaurant::getScore).reversed());
 
     private String name;
     private int score;
