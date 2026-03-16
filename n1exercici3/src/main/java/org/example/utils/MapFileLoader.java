@@ -3,6 +3,7 @@ package org.example.utils;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
@@ -25,7 +26,7 @@ public class MapFileLoader {
                 }
             }
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new UncheckedIOException("Error al carregar països: " + p.toAbsolutePath(), e);
         }
         return countries;
     }
@@ -41,7 +42,7 @@ public class MapFileLoader {
             bw.write(name + ":" + score);
             return true;
         } catch (IOException e) {
-            throw new RuntimeException("Error en la escriptura de classificació: "+e.getMessage());
+            throw new UncheckedIOException("Error en la escriptura de classificació en: " + p.toAbsolutePath(), e);
         }
     }
 }

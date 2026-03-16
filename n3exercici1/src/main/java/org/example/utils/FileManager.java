@@ -4,6 +4,7 @@ import org.example.model.Person;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashSet;
@@ -13,7 +14,7 @@ import static org.example.utils.ValidationUtils.isValidDni;
 
 public class FileManager {
 
-    public static HashSet<Person> loadPersonCSVtoHashSet(Path p) {
+    public static HashSet<Person> loadPersonCSVtoHashSet(Path p) throws IOException {
         HashSet<Person> people = new HashSet<>();
         try(BufferedReader br = Files.newBufferedReader(p)) {
             String line;
@@ -27,7 +28,7 @@ public class FileManager {
                 people.add(new Person(parts[0].trim(), parts[1].trim(), parts[2].trim()));
             }
         } catch (IOException e) {
-            throw new RuntimeException("Error en la càrrega de CSV: " + e.getMessage());
+            throw new UncheckedIOException("Error al cargar el CSV desde: " + p.toAbsolutePath(), e);
         }
         return people;
     }
